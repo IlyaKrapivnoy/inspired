@@ -1,0 +1,192 @@
+ /* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul li {
+	list-style-type: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+	/*font-family: 'Andika New Basic', sans-serif;*/
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+}
+.container {
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+.container__second {
+	width: 100%;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.header {
+	margin-top: 80px;
+
+}
+.right {
+	display: flex;
+}
+.header__logo {
+	margin-right: 20px;
+}
+.right .text {
+	align-self: center;
+	text-align: center;
+}
+.right .text p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 0;
+
+}
+.right .text span {
+	font-size: 40px;
+	letter-spacing: 6px;
+}
+.left {
+	display: flex;
+	align-items: center;
+}
+.left p {
+	margin-right: 20px;
+	color: #838383;
+	font-size: 13px;
+}
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social__link {
+	display: inline-flex;
+	vertical-align: top;
+	margin-left: 8px;
+
+}
+/*lower header start*/
+.header__outer nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 35px 0 15px;
+	align-items: center;
+}
+.header__outer nav a {
+	color: #838383;
+	line-height: 18px;
+	letter-spacing: 3.6px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.header__outer nav input {
+	border: 1px solid #ccc;
+	padding: 2px 6px;
+	border-radius: 5px;
+	outline: none;
+}
+
+
+
+
+/*.header {
+	margin-top: 80px;
+
+}
+
+.header__inner {
+	display: flex;
+ 
+}
+.header__inner img {
+
+}
+.header__inner--social ul {
+	display: flex;
+
+}
+.header__inner--social ul li {
+	padding: 0 8px;
+}*/
+
+/*.header__inner--bottom ul li a {
+	padding: 0 20px;
+	color: #838383;
+	line-height: 18px;
+	letter-spacing: 3.6px;
+	font-size: 18px;
+	text-transform: uppercase;
+}*/
